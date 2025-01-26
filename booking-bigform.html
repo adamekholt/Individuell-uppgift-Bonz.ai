@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking big form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+</head>
+<body>
+    <main class="grid.container">
+        <section class="nav">  <!-- Block: nav -->
+            <div class="nav__items"> <!--Element: nav__items-->
+            <section class="nav__button-container"> <!--Element: nav__button-container-->
+                <a class="nav__link" href="about.html">About us</a> <!--Element: nav__link-->
+            </section>  
+            <span class="material-symbols-outlined">
+                <a class="hover-icon" href="index.html">home</a> <!--Modifier: hover-icon -->
+                </span>
+            </div>
+        </section>
+
+    <div class="content">
+        <form class="bookingform-big" action="reservation-validate.html">
+        <label for="firstname">First name</label>
+        <input type="text" id="firstname" required>
+        <label for="lastname">Last name</label>
+        <input type="text" id="lastname" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="phonenumber">Phone number</label>
+        <input type="number" id="phonenumber" required>
+        <label for="checkin">Check in</label>
+            <input type="date" id="checkin" name="" required >
+            <label for="checkout">Check out</label>
+            <input type="date" id="checkout" name="" required>
+            <label for="guests">Guests</label>
+            <select name="" id="guests" required>
+                <option value="option-1">1</option>
+                <option value="option-2">2</option>
+                <option value="option-3">3</option>
+                <option value="option-4">4</option>
+                <option value="option-5">5</option>
+            </select>
+        <label for="other-requests">Other requests</label>
+        <textarea id="other-requests"></textarea>
+        <section class="button-container" id="reserve">
+            <button type="submit" class="hover-btn">Submit your reservation</button>
+        </section>
+        </form>
+    </div>
+
+<footer>
+    <div class="footer">
+        <ul class="list">
+            <li>Contact</li>
+            <li>Work at Bonz.ai</li>
+            <li>Terms & conditions</li>
+        </ul>
+    </div>
+</footer>        
+
+</main>
+</body>
+</html>
